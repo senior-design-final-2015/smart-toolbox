@@ -28,6 +28,18 @@ public class HelloWorldController {
         model.addAttribute("student", student);
         return "enroll";
     }
+    
+    /**
+     * For registration
+     * @param model
+     * @return 
+     */
+     @RequestMapping(value="/addnewuser",method = RequestMethod.GET)
+    public String registration(ModelMap model) {
+        Student student = new Student();
+        model.addAttribute("student", student);
+        return "addnewuser";
+    }
 
     /*
      * This method will be called on form submission, handling POST request It

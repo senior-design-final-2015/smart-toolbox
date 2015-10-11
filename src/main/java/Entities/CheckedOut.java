@@ -5,6 +5,7 @@
  */
 package Entities;
 
+import com.websystique.springmvc.model.Student;
 import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
